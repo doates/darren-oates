@@ -1,0 +1,37 @@
+<html>
+<head>
+<style>
+tr { width: 300px; height: 100px }
+td { width: 100px; height: 100px }
+img { width: 100px; height: 100px }
+</style>
+<script>
+var x = function moveImgRandomly(){
+var elem = document.getElementById("image");// set the image as var elem
+ document.getElementById("" + Math.floor((Math.random() * 9) + 1)).appendChild(elem);// chooses a box between 1-9
+
+}
+setInterval(x,200);
+
+ </script>
+</head>
+<body onload = "moveImgRandomly()" > 
+<table border = "3">
+ <tr>
+<td id = "1"></td>
+<td id = "2"></td>
+<td id = "3"><img id ="image" onclick ="alert('caught')" src="http://graemehobbs93.files.wordpress.com/2012/01/ape-1.jpg"/></td>
+ </tr>
+ <tr>
+<td id = "4"></td>
+<td id = "5"></td>
+<td id = "6"></td>
+ </tr>
+ <tr>
+<td id = "7"></td>
+<td id = "8"></td>
+<td id = "9"></td>
+ </tr>
+</table>
+</body>
+</html>
